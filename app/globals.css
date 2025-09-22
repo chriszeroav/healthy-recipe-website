@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-custom-neutral-900: #163a34;
+  --color-custom-neutral-600: #395852;
+  --color-custom-neutral-300: #d0dcd9;
+  --color-custom-neutral-200: #e0e6e3;
+  --color-custom-neutral-100: #f6f5f1;
+  --color-custom-neutral-0: #ffffff;
+  --color-custom-orange-500: #fe9f6b;
+  --color-custom-teal-500: #49ac9b;
+  --color-custom-indigo-500: #697ddb;
+
+  --font-nunito: var(--font-nunito);
+  --font-nunito-sans: var(--font-nunito-sans);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@utility text-preset-1 {
+  font-family: var(--font-nunito);
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 110%;
+  letter-spacing: -2px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility text-preset-1-tablet {
+  font-family: var(--font-nunito);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: -2px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility text-preset-1-mobile {
+  font-family: var(--font-nunito);
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 110%;
+  letter-spacing: -2px;
+}
+
+@utility text-preset-2 {
+  font-family: var(--font-nunito);
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -2px;
+}
+
+@utility text-preset-2-mobile {
+  font-family: var(--font-nunito);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -2px;
+}
+
+@utility text-preset-3 {
+  font-family: var(--font-nunito);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: -1px;
+}
+
+@utility text-preset-4 {
+  font-family: var(--font-nunito);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: -1px;
+}
+
+@utility text-preset-5 {
+  font-family: var(--font-nunito);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+}
+
+@utility text-preset-6 {
+  font-family: var(--font-nunito-sans);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+
+@utility text-preset-7 {
+  font-family: var(--font-nunito);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+}
+
+@utility text-preset-8 {
+  font-family: var(--font-nunito-sans);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+}
+
+@utility text-preset-9 {
+  font-family: var(--font-nunito-sans);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.3px;
 }
