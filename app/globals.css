@@ -16,6 +16,7 @@
   --font-nunito-sans: var(--font-nunito-sans);
 
   --spacing-custom: 1192px;
+  --spacing-view: 1440px;
 }
 
 @utility text-preset-1 {
