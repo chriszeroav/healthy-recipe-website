@@ -1,0 +1,23 @@
+import { FC, SVGProps } from "react";
+
+interface ServingsIconProps extends SVGProps<SVGSVGElement> {}
+
+export const ServingsIcon: FC<ServingsIconProps> = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      fill="none"
+      viewBox="0 0 20 20"
+      {...props}
+    >
+      <path
+        fill="#163A34"
+        fillRule="evenodd"
+        d="M9.76 10.595c2.08 0 3.76-1.68 3.76-3.76.08-2.08-1.6-3.76-3.76-3.76-2.08 0-3.76 1.68-3.76 3.76s1.68 3.76 3.76 3.76ZM15.28 15.636c-.24-.88-.72-1.68-1.68-2.32-.8-.56-2.08-.96-3.84-.96-3.44 0-5.12 1.6-5.6 3.28-.16.48.08.96.48 1.2 1.44.96 3.2 1.44 5.12 1.44 1.84 0 3.6-.56 5.04-1.44.4-.24.64-.72.48-1.2Z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+};

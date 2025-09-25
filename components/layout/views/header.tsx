@@ -67,7 +67,7 @@ export const Header: FC<HeaderProps> = () => {
           <PopoverContent
             sideOffset={12}
             align="end"
-            className="w-[calc(100vw-2rem)] flex flex-col gap-2.5 lg:hidden"
+            className="w-[calc(100vw-3rem)] md:w-[calc(100vw-5rem)] flex flex-col gap-2.5 lg:hidden"
           >
             <nav className="flex flex-col gap-2">
               {navigationItems.map((item) => (

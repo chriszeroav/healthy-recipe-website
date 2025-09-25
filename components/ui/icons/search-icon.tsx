@@ -1,0 +1,23 @@
+import { FC, SVGProps } from "react";
+
+interface SearchIconProps extends SVGProps<SVGSVGElement> {}
+
+export const SearchIcon: FC<SearchIconProps> = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="21"
+      fill="none"
+      viewBox="0 0 20 21"
+      {...props}
+    >
+      <path
+        fill="#163A34"
+        fillRule="evenodd"
+        d="M3.336 9.318A5.872 5.872 0 0 1 9.2 3.453a5.872 5.872 0 0 1 5.865 5.865 5.873 5.873 0 0 1-5.865 5.866 5.873 5.873 0 0 1-5.865-5.866Zm15.412 8.716-3.832-3.823a7.492 7.492 0 0 0 1.817-4.893c0-4.153-3.38-7.532-7.532-7.532-4.153 0-7.532 3.38-7.532 7.532 0 4.153 3.38 7.532 7.532 7.532a7.477 7.477 0 0 0 4.494-1.502l3.876 3.866 1.177-1.18Z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+};
