@@ -1,4 +1,5 @@
 export * from "./menu";
+export * from "./bullet-point";
 
 //FEATURES
 export * from "./minimum-fuss-icon";
