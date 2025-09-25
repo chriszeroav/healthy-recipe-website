@@ -1,4 +1,5 @@
 import { Features, Hero, QuickRecipes } from "@/components/home";
+import { Banner } from "@/components/layout";
 import { Divider } from "@/components/ui/divider";
 
 export default function Page() {
@@ -8,6 +9,7 @@ export default function Page() {
       <Features />
       <Divider />
       <QuickRecipes />
+      <Banner />
     </main>
   );
 }
