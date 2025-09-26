@@ -1,9 +1,9 @@
 import { RECIPES } from "@/data/recipes";
 
 export const useGetRecipes = (
-  maxPrepTime: string,
-  maxCookTime: string,
-  search: string
+  maxPrepTime?: string,
+  maxCookTime?: string,
+  search?: string
 ) => {
   const filteredRecipes = RECIPES.filter((recipe) => {
     const matchesPrepTime = maxPrepTime
