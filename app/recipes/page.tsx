@@ -6,6 +6,7 @@ import {
 } from "@/components/recipes";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Recipes",
@@ -73,14 +74,33 @@ export default function Page() {
           )}
         >
           <div className="flex flex-col gap-3 md:flex-row">
-            <SelectMaxPrepTime />
-            <SelectMaxCookTime />
+            <Suspense>
+              <SelectMaxPrepTime />
+            </Suspense>
+            <Suspense>
+              <SelectMaxCookTime />
+            </Suspense>
           </div>
-          <SearchRecipe />
+          <Suspense>
+            <SearchRecipe />
+          </Suspense>
         </div>
 
         <div className="max-w-custom mx-auto w-full">
-          <Recipes />
+          <Suspense
+            fallback={
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {Array.from({ length: 6 }).map((_, index) => (
+                  <div
+                    key={index}
+                    className="animate-pulse rounded-[10px] bg-custom-neutral-200 p-4 aspect-[63/100] lg:aspect-[68/100]"
+                  ></div>
+                ))}
+              </div>
+            }
+          >
+            <Recipes />
+          </Suspense>
         </div>
       </section>
     </main>
