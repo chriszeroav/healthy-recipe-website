@@ -15,7 +15,7 @@ interface RecipesProps {
 
 export const Recipes: FC<RecipesProps> = ({ data }) => {
   return (
-    <ul className="flex flex-col gap-8 lg:grid lg:grid-cols-3">
+    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {data.map((recipe) => (
         <li
           key={recipe.id}
@@ -23,13 +23,13 @@ export const Recipes: FC<RecipesProps> = ({ data }) => {
             "flex flex-col gap-4",
             "border border-custom-neutral-300",
             "bg-custom-neutral-0 p-2 rounded-[18px]",
-            "hover:scale-105 transition-transform duration-300"
+            "hover:scale-[102%] transition-transform duration-500"
           )}
         >
           <img
             src={recipe.image}
             alt={recipe.title}
-            className="rounded-[10px] max-h-[300px] object-cover"
+            className="rounded-[10px] lg:max-h-[300px] object-cover"
           />
           <div className="flex flex-col gap-2 flex-1 px-2">
             <h3 className="text-preset-5 text-custom-neutral-900 truncate">
@@ -63,7 +63,7 @@ export const Recipes: FC<RecipesProps> = ({ data }) => {
           </div>
 
           <Link
-            href={`/recipes/${recipe.id}`}
+            href={`/recipes/${recipe.slug}`}
             className={buttonVariants({ className: "text-preset-8" })}
           >
             View Recipe

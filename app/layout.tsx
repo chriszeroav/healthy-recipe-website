@@ -13,9 +13,27 @@ const nunito_sans = Nunito_Sans({
   subsets: ["latin"],
 });
 
+const titleTemplate = "%s | Healthy Recipe Website";
+const defaultTitle =
+  "Healthy Recipe Website - Quick & Nutritious Whole-Food Recipes";
+
 export const metadata: Metadata = {
-  title: "Healthy Recipe Website",
-  description: "A website dedicated to healthy recipes",
+  title: {
+    template: titleTemplate,
+    default: defaultTitle,
+  },
+  description:
+    "Discover quick and nutritious whole-food recipes designed for real life. All recipes use everyday ingredients and take 30 minutes or less to prepare.",
+  keywords: [
+    "healthy recipes",
+    "quick recipes",
+    "whole food recipes",
+    "nutritious meals",
+    "30 minute meals",
+    "healthy cooking",
+    "simple recipes",
+    "unprocessed ingredients",
+  ],
 };
 
 export default function RootLayout({
