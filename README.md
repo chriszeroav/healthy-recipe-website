@@ -2,6 +2,8 @@
 
 A responsive recipe finder website built with modern web technologies. Users can search for recipes by name or ingredient, filter by preparation time, and enjoy an optimal viewing experience across all devices.
 
+<img width="1450" height="1194" alt="Captura de pantalla 2025-09-26 a las 4 54 33 p  m" src="https://github.com/user-attachments/assets/da7614bd-1274-44aa-83a3-dfddbed20817" />
+
 ## Features
 
 - **Recipe Search**: Search for recipes by name or ingredient
